@@ -9,7 +9,7 @@ public unsafe interface IWebGPUContext : IDisposable
     /// <summary>
     /// Our regular window
     /// </summary>
-    IWindow Window { get; }
+    IWindow WindowContext { get; }
 
     /// <summary>
     /// In WebGPU, an instance is the main entry point for interacting with the WebGPU API.
