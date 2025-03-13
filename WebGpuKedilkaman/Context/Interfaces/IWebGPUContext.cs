@@ -288,7 +288,7 @@ public unsafe interface IWebGPUContext : IDisposable
     /// Example:
     /// glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, width, height, 0, GL_BGRA, GL_UNSIGNED_BYTE, data);
     /// </summary>
-    public TextureFormat PreferredTextureFormat => TextureFormat.Bgra8Unorm;
+    TextureFormat PreferredTextureFormat { get; }
 
     /// <summary>
     /// In WebGPU, a render pass encoder is responsible for recording rendering commands within a render pass.
